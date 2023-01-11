@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "9a00e16b-4dbe-47be-88a7-fbc2d867d753",
+		"name": "EntgraOnboardingTaskCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25253445"
+	},
+	"item": [
+		{
+			"name": "Get Devices",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Enrol Device",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Status",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Ravindu's phone",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/device",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"device"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
