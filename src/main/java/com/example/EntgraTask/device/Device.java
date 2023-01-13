@@ -1,6 +1,7 @@
-package com.example.EntgraTask.Device;
+package com.example.EntgraTask.device;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
 
 @Entity
@@ -11,10 +12,12 @@ public class Device {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @NotBlank(message = "Name is mandatory")
     private String name;
 
     private DeviceStatus status;
 
+    @NotBlank(message = "Device model is mandatory")
     private String model;
 
     private LocalDateTime enrolledDateTime;
@@ -27,6 +30,10 @@ public class Device {
         this.status = status;
         this.model = model;
         this.enrolledDateTime = enrolledDateTime;
+
+        if (status == null){
+            this.status = DeviceStatus.ENROLLED;
+        }
     }
 
     @Override

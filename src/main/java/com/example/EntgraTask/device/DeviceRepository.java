@@ -1,4 +1,4 @@
-package com.example.EntgraTask.Device;
+package com.example.EntgraTask.device;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
