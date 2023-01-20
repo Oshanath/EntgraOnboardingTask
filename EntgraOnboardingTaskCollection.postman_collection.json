@@ -1,32 +1,82 @@
 {
 	"info": {
-		"_postman_id": "9a00e16b-4dbe-47be-88a7-fbc2d867d753",
+		"_postman_id": "bc2b10f7-c08c-478c-9db6-02bcfdeab914",
 		"name": "EntgraOnboardingTaskCollection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "25253445"
+		"_exporter_id": "25430765"
 	},
 	"item": [
 		{
 			"name": "Get Devices",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/devices",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"devices"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Enrol Device",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"New phone\",\n    \"status\": 2,\n    \"model\": \"samsung galaxy s3\",\n    \"enrolledDateTime\": \"2023-01-02T13:22\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/devices/New phone",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"devices",
+						"New phone"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Update Status",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"newStatus\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/devices/Oshanath's phone",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"devices",
+						"Oshanath's phone"
+					]
+				}
 			},
 			"response": []
 		},
@@ -35,23 +85,15 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "Ravindu's phone",
-					"options": {
-						"raw": {
-							"language": "text"
-						}
-					}
-				},
 				"url": {
-					"raw": "localhost:8081/device",
+					"raw": "localhost:8081/devices/Ravindu's phone",
 					"host": [
 						"localhost"
 					],
 					"port": "8081",
 					"path": [
-						"device"
+						"devices",
+						"Ravindu's phone"
 					]
 				}
 			},
