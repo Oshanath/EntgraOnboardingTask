@@ -1,4 +1,4 @@
-package com.example.EntgraTask;
+package com.example.entgratask;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.example.EntgraTask;
+package com.example.entgratask;
 
 public class Routes {
 

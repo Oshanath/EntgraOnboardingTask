@@ -1,4 +1,4 @@
-package com.example.EntgraTask.device;
+package com.example.entgratask.device;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;

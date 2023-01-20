@@ -1,4 +1,4 @@
-package com.example.EntgraTask.device;
+package com.example.entgratask.device;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;

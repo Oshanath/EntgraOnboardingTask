@@ -1,10 +1,10 @@
-package com.example.EntgraTask.services;
+package com.example.entgratask.services;
 
-import com.example.EntgraTask.device.Device;
-import com.example.EntgraTask.device.DeviceRepository;
-import com.example.EntgraTask.device.DeviceStatus;
-import com.example.EntgraTask.exceptions.DeviceAlreadyExistsException;
-import com.example.EntgraTask.exceptions.DeviceNotFoundException;
+import com.example.entgratask.device.Device;
+import com.example.entgratask.device.DeviceRepository;
+import com.example.entgratask.device.DeviceStatus;
+import com.example.entgratask.exceptions.DeviceAlreadyExistsException;
+import com.example.entgratask.exceptions.DeviceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
